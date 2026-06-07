@@ -1,4 +1,10 @@
 import Link from "next/link";
+import {
+  fallbackHomepageContent,
+  type HomepageContent,
+} from "@/sanity/lib/homepage";
+import { sanityFetch } from "@/sanity/lib/live";
+import { HOMEPAGE_QUERY } from "@/sanity/lib/queries";
 
 const featuredPages = [
   {
@@ -30,7 +36,26 @@ const stats = [
   ["3 tracks", "STEM, events, support"],
 ];
 
-export default function Home() {
+function withFallback(content: Partial<HomepageContent> | null): HomepageContent {
+  return {
+    heroTitle: content?.heroTitle || fallbackHomepageContent.heroTitle,
+    heroSubtitle: content?.heroSubtitle || fallbackHomepageContent.heroSubtitle,
+    missionTitle: content?.missionTitle || fallbackHomepageContent.missionTitle,
+    missionText: content?.missionText || fallbackHomepageContent.missionText,
+    donateTitle: content?.donateTitle || fallbackHomepageContent.donateTitle,
+    donateText: content?.donateText || fallbackHomepageContent.donateText,
+    donateButtonText:
+      content?.donateButtonText || fallbackHomepageContent.donateButtonText,
+    donateUrl: content?.donateUrl || fallbackHomepageContent.donateUrl,
+  };
+}
+
+export default async function Home() {
+  const { data } = await sanityFetch<Partial<HomepageContent> | null>({
+    query: HOMEPAGE_QUERY,
+  });
+  const homepage = withFallback(data);
+
   return (
     <main>
       <section className="section-shell grid gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
@@ -39,19 +64,17 @@ export default function Home() {
             Create more. Consume less.
           </p>
           <h1 className="font-display max-w-4xl text-6xl uppercase leading-[0.9] text-ink sm:text-7xl lg:text-8xl">
-            The Creation Movement
+            {homepage.heroTitle}
           </h1>
           <p className="mt-7 max-w-2xl text-xl font-semibold leading-8 text-ink/75">
-            A youth-led nonprofit inspiring young people to become creators
-            through STEM education, creative expression, community support, and
-            real-world service.
+            {homepage.heroSubtitle}
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <Link
-              href="https://www.gofundme.com/f/creation-over-consumption-the-creation-movement"
+              href={homepage.donateUrl}
               className="rounded-full border-3 border-ink bg-orange px-7 py-4 text-center font-black uppercase tracking-[0.12em] shadow-[6px_6px_0_#001a46] transition-transform hover:-translate-y-1"
             >
-              Donate on GoFundMe
+              {homepage.donateButtonText}
             </Link>
             <Link
               href="/about"
@@ -65,11 +88,10 @@ export default function Home() {
         <div className="rounded-[2rem] border-3 border-ink bg-white p-6 shadow-[12px_12px_0_#7c3fd1]">
           <div className="rounded-2xl bg-teal p-7 text-white shadow-[7px_7px_0_#f57a20]">
             <p className="font-accent text-4xl leading-tight">
-              Empowering minds. Fueling creators.
+              {homepage.missionTitle}
             </p>
             <p className="mt-5 text-base font-semibold leading-7 text-white/85">
-              We are building programs and partnerships that help students
-              think, build, share, and make an impact.
+              {homepage.missionText}
             </p>
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -118,19 +140,18 @@ export default function Home() {
           <div>
             <p className="font-accent text-4xl text-sun">Next up</p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-              Partners, events, and support are ready for real details.
+              {homepage.donateTitle}
             </h2>
             <p className="mt-5 max-w-2xl font-semibold leading-7 text-white/75">
-              The current pages use clean placeholders for bios, partner notes,
-              and forms so the site can grow as you collect final text.
+              {homepage.donateText}
             </p>
           </div>
           <div className="flex flex-col justify-center gap-3">
             <Link
-              href="/donate"
+              href={homepage.donateUrl}
               className="rounded-full border-3 border-white bg-white px-7 py-4 text-center font-black uppercase tracking-[0.12em] text-ink"
             >
-              View donation options
+              {homepage.donateButtonText}
             </Link>
             <Link
               href="/contact"

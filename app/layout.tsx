@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SanityLive } from "@/sanity/lib/live";
 import "./globals.css";
 
 const navItems = [
@@ -65,6 +66,7 @@ export default function RootLayout({
         </header>
 
         {children}
+        <SanityLive />
 
         <footer className="border-t-3 border-ink bg-paper px-5 py-10 sm:px-8">
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-end">
