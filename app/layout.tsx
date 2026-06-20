@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SanityLive } from "@/sanity/lib/live";
 import "./globals.css";
@@ -31,9 +32,13 @@ export default function RootLayout({
             className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 sm:px-8"
           >
             <Link href="/" className="group flex min-w-0 items-center gap-3">
-              <span className="grid size-11 shrink-0 place-items-center rounded-full border-3 border-ink bg-sun text-base font-black text-ink shadow-[3px_3px_0_#001a46] transition-transform group-hover:-rotate-3">
-                CM
-              </span>
+              <Image
+                src="/brand/Screenshot_2026-06-20_at_2.13.35_PM-removebg-preview.png"
+                alt="The Creation Movement logo"
+                width={96}
+                height={72}
+                className="h-12 w-auto shrink-0 object-contain transition-transform group-hover:-rotate-3"
+              />
               <span className="min-w-0 leading-none">
                 <span className="block text-[0.65rem] font-black uppercase tracking-[0.24em] text-purple">
                   The
