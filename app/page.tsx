@@ -30,12 +30,6 @@ const featuredPages = [
   },
 ];
 
-const stats = [
-  ["Pilot stage", "Building honestly"],
-  ["4 leaders", "Student-led team"],
-  ["3 tracks", "STEM, events, support"],
-];
-
 function withFallback(content: Partial<HomepageContent> | null): HomepageContent {
   return {
     heroTitle: content?.heroTitle || fallbackHomepageContent.heroTitle,
@@ -58,54 +52,43 @@ export default async function Home() {
 
   return (
     <main>
-      <section className="section-shell grid gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
-        <div className="flex flex-col justify-center">
-          <p className="marker-swipe mb-6 w-max bg-sun px-5 py-2 text-sm font-black uppercase tracking-[0.18em]">
-            Create more. Consume less.
-          </p>
-          <h1 className="font-display max-w-4xl text-6xl uppercase leading-[0.9] text-ink sm:text-7xl lg:text-8xl">
-            {homepage.heroTitle}
-          </h1>
-          <p className="mt-7 max-w-2xl text-xl font-semibold leading-8 text-ink/75">
-            {homepage.heroSubtitle}
-          </p>
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href={homepage.donateUrl}
-              className="rounded-full border-3 border-ink bg-orange px-7 py-4 text-center font-black uppercase tracking-[0.12em] shadow-[6px_6px_0_#001a46] transition-transform hover:-translate-y-1"
-            >
-              {homepage.donateButtonText}
-            </Link>
-            <Link
-              href="/about"
-              className="rounded-full border-3 border-ink bg-white px-7 py-4 text-center font-black uppercase tracking-[0.12em] shadow-[6px_6px_0_#7c3fd1] transition-transform hover:-translate-y-1"
-            >
-              Learn our story
-            </Link>
-          </div>
-        </div>
-
-        <div className="rounded-[2rem] border-3 border-ink bg-white p-6 shadow-[12px_12px_0_#7c3fd1]">
-          <div className="rounded-2xl bg-teal p-7 text-white shadow-[7px_7px_0_#f57a20]">
-            <p className="font-accent text-4xl leading-tight">
-              {homepage.missionTitle}
+      <section className="relative isolate overflow-hidden border-b-3 border-ink bg-ink py-20 lg:py-28">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-20 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/brand/132_jguqb8-1024x683.jpg')",
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/90 via-ink/62 to-ink/18"
+        />
+        <div className="section-shell">
+          <div className="max-w-4xl py-10">
+            <p className="marker-swipe mb-6 w-max bg-sun px-5 py-2 text-sm font-black uppercase tracking-[0.18em] text-ink">
+              Create more. Consume less.
             </p>
-            <p className="mt-5 text-base font-semibold leading-7 text-white/85">
-              {homepage.missionText}
+            <h1 className="max-w-4xl text-6xl font-black uppercase leading-[0.9] tracking-tight text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.28)] sm:text-7xl lg:text-8xl">
+              {homepage.heroTitle}
+            </h1>
+            <p className="mt-7 max-w-2xl text-xl font-semibold leading-8 text-white/90">
+              {homepage.heroSubtitle}
             </p>
-          </div>
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            {stats.map(([value, label]) => (
-              <div
-                key={label}
-                className="rounded-xl border-3 border-ink bg-paper p-4 text-center"
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href={homepage.donateUrl}
+                className="rounded-full border-3 border-ink bg-orange px-7 py-4 text-center font-black uppercase tracking-[0.12em] text-ink shadow-[6px_6px_0_#001a46] transition-transform hover:-translate-y-1"
               >
-                <p className="text-xl font-black">{value}</p>
-                <p className="mt-2 text-xs font-bold uppercase tracking-[0.15em] text-ink/60">
-                  {label}
-                </p>
-              </div>
-            ))}
+                {homepage.donateButtonText}
+              </Link>
+              <Link
+                href="/about"
+                className="rounded-full border-3 border-ink bg-white px-7 py-4 text-center font-black uppercase tracking-[0.12em] text-ink shadow-[6px_6px_0_#7c3fd1] transition-transform hover:-translate-y-1"
+              >
+                Learn our story
+              </Link>
+            </div>
           </div>
         </div>
       </section>
