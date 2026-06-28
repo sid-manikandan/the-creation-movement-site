@@ -12,7 +12,7 @@ export type HomepageContent = {
 export const fallbackHomepageContent: HomepageContent = {
   heroTitle: "The Creation Movement",
   heroSubtitle:
-    "A youth-led nonprofit inspiring young people to become creators through STEM education, creative expression, community support, and real-world service.",
+    "A student-led nonprofit that empowers young people to become creators through STEM education, creative expression, community support, and real-world service.",
   missionTitle: "Empowering minds. Fueling creators.",
   missionText:
     "We are building programs and partnerships that help students think, build, share, and make an impact.",

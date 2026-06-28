@@ -11,11 +11,11 @@ const partners = [
   },
   {
     name: "Brain Bunch",
-    status: "Future collaboration",
+    status: "Donation partner",
     description:
-      "Brain Bunch is a developing relationship for future learning and outreach opportunities. As our programs grow, we hope to collaborate with organizations that share our focus on student curiosity and community impact.",
-    link: "",
-    linkLabel: "Collaboration in progress",
+      "Brain Bunch helps students explore STEM by introducing them to neuroscience through hands-on learning. Their work makes brain science simple, engaging, and accessible while encouraging a love for education among students, including those underrepresented in STEM.",
+    link: "https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=UG3U8WST3ULN6&source=url&ssrt=1780788747447",
+    linkLabel: "Brain Bunch donation link",
   },
 ];
 
