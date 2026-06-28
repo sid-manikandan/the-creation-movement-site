@@ -8,6 +8,7 @@ const partners = [
     logoFile: "/brand/Screenshot_2026-06-28_at_3.27.47_PM-removebg-preview.png",
     logoWidth: 124,
     logoHeight: 162,
+    logoClassName: "max-h-32",
     description:
       "Pratham works toward a world where every child is in school and learning well. Their programs support millions of children and youth across India, especially underprivileged students, through innovative learning and training programs.",
     link: "https://give.prathamusa.org/thecreationmovement",
@@ -19,6 +20,7 @@ const partners = [
     logoFile: "/brand/Screenshot_2026-06-28_at_3.28.11_PM-removebg-preview.png",
     logoWidth: 192,
     logoHeight: 162,
+    logoClassName: "max-h-28",
     description:
       "Brain Bunch helps students explore STEM by introducing them to neuroscience through hands-on learning. Their work makes brain science simple, engaging, and accessible while encouraging a love for education among students, including those underrepresented in STEM.",
     link: "https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=UG3U8WST3ULN6&source=url&ssrt=1780788747447",
@@ -76,7 +78,7 @@ export default function PartnersPage() {
                   width={partner.logoWidth}
                   height={partner.logoHeight}
                   alt={`${partner.name} logo`}
-                  className="max-h-28 w-auto object-contain"
+                  className={`${partner.logoClassName} w-auto object-contain`}
                 />
               </div>
             </article>

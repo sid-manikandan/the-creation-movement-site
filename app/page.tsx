@@ -96,7 +96,6 @@ export default async function Home() {
       <section className="border-y-3 border-ink bg-white py-16">
         <div className="section-shell">
           <div className="max-w-3xl">
-            <p className="font-accent text-4xl text-purple">Start Here</p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
               How we turn creativity into action
             </h2>
