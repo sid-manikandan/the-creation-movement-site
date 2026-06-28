@@ -68,6 +68,10 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <div aria-hidden="true" className="section-shell">
+        <div className="h-3 rounded-full border-3 border-ink bg-white shadow-[6px_6px_0_#ffc32d]" />
+      </div>
+
       <section className="section-shell py-16">
         <div className="max-w-3xl">
           <p className="font-accent text-4xl text-purple">Mission</p>
