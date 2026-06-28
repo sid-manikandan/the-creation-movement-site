@@ -2,21 +2,21 @@ const team = [
   {
     name: "Het Gandhi",
     role: "Founder",
-    bio: "Bio coming soon.",
+    bio: "Het is a rising junior at East Brunswick High School who believes creativity has the power to shape a better future. He enjoys reading, journaling, exploring new ideas, and making the most of time outdoors with friends. He founded The Creation Movement with the mission of helping young people become creators instead of consumers in a world increasingly dominated by screens. By encouraging curiosity, hands-on learning, and creative expression, he hopes to inspire the next generation to think independently, build boldly, and leave a positive mark on the world.",
   },
   {
     name: "Siddharth Manikandan",
-    role: "Co-Founder",
+    role: "Co-Founder - Marketing Director",
     bio: "Bio coming soon.",
   },
   {
     name: "Pranay Burla",
-    role: "Co-Founder",
-    bio: "Pranay is passionate about science, sports, and community service. He enjoys playing baseball and basketball, exploring new scientific ideas, and trying different foods. He joined the nonprofit to combine his love for chemistry and science with his goal of helping kids develop creativity and curiosity in an age increasingly shaped by technology and phones.",
+    role: "Co-Founder - Lead Contributor",
+    bio: "Pranay is a student at East Brunswick High School who is passionate about science, sports, and community service. He enjoys playing baseball and basketball, exploring new scientific ideas, and trying different foods. He joined the nonprofit to combine his love for chemistry and science with his goal of helping kids develop creativity and curiosity in an age increasingly shaped by technology and phones.",
   },
   {
     name: "Vedh Gajawada",
-    role: "Co-Founder",
+    role: "Co-Founder - Outreach Coordinator",
     bio: "Vedh is currently a student at East Brunswick High School. His interest in STEM helps him develop problem-solving skills and explore the world of engineering. He participates in his school’s robotics club, demonstrating valuable teamwork and gaining constant hands-on experience. Outside of academics, Vedh loves to play volleyball on his school team, read in his free time, and travel around the world with his family. His main goal in joining the nonprofit was to apply his interests in a meaningful way while giving back to his community, allowing him to help students build their confidence in STEM-related fields.",
   },
 ];

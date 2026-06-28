@@ -1,18 +1,21 @@
 const eventTracks = [
   {
-    title: "Library Events",
+    title: "EBPL Library Workshops",
     description:
-      "Hands-on sessions where students can explore STEM, creativity, and problem-solving in a welcoming community space.",
+      "Join The Creation Movement at the East Brunswick Public Library for free hands-on STEM and creativity workshops.",
+    details: [
+      "Tuesday, July 8, 3:00-4:30 PM",
+      "Tuesday, July 15, 3:00-4:30 PM",
+      "To attend, arrive at the library 30 minutes before the session to pick up a free entry ticket.",
+    ],
   },
   {
     title: "Private Sessions",
     description:
-      "Small-group or one-on-one learning opportunities for students who want extra support, enrichment, or project guidance.",
-  },
-  {
-    title: "Interest Form",
-    description:
-      "Families and volunteers can contact the team to share interest while our official signup form is being prepared.",
+      "Private sessions are small-group or one-on-one learning opportunities for students who want extra STEM support, enrichment, or project guidance.",
+    actionHref:
+      "https://docs.google.com/forms/d/1M1oUQT8zL3H48coAxxKvD-J9qD5EVFg4cjJW5EWKOF4/edit?ts=6a4170e0",
+    actionLabel: "Private Lessons Interest Form",
   },
 ];
 
@@ -32,7 +35,7 @@ export default function EventsPage() {
       </section>
 
       <section className="border-y-3 border-ink bg-white py-16">
-        <div className="section-shell grid gap-6 md:grid-cols-3">
+        <div className="section-shell grid gap-6 md:grid-cols-2">
           {eventTracks.map((track, index) => (
             <article
               key={track.title}
@@ -47,6 +50,26 @@ export default function EventsPage() {
               <p className="mt-4 font-semibold leading-7 text-ink/70">
                 {track.description}
               </p>
+              {"details" in track ? (
+                <ul className="mt-5 grid gap-3">
+                  {track.details.map((detail) => (
+                    <li
+                      key={detail}
+                      className="rounded-xl bg-white p-4 text-sm font-black leading-6 text-ink/75"
+                    >
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+              {"actionHref" in track ? (
+                <a
+                  href={track.actionHref}
+                  className="mt-6 inline-flex rounded-full border-3 border-ink bg-orange px-6 py-3 text-sm font-black uppercase tracking-[0.12em] shadow-[5px_5px_0_#001a46]"
+                >
+                  {track.actionLabel}
+                </a>
+              ) : null}
             </article>
           ))}
         </div>
