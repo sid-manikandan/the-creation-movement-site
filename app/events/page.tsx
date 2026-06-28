@@ -2,17 +2,17 @@ const eventTracks = [
   {
     title: "Library Events",
     description:
-      "Placeholder for upcoming library sessions, workshop dates, locations, and registration details.",
+      "Hands-on sessions where students can explore STEM, creativity, and problem-solving in a welcoming community space.",
   },
   {
     title: "Private Sessions",
     description:
-      "Placeholder for private lessons, small-group STEM support, and custom learning opportunities.",
+      "Small-group or one-on-one learning opportunities for students who want extra support, enrichment, or project guidance.",
   },
   {
     title: "Interest Form",
     description:
-      "Google Form placeholder. Add the real form link when it is ready so families and volunteers can sign up.",
+      "Families and volunteers can contact the team to share interest while our official signup form is being prepared.",
   },
 ];
 
@@ -25,8 +25,9 @@ export default function EventsPage() {
           Learn, build, and connect in person.
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          Keep the event structure simple for now: library events, private
-          sessions, and an interest form placeholder.
+          Our events are built around active learning: students ask questions,
+          try ideas, make projects, and connect what they learn to the world
+          around them.
         </p>
       </section>
 

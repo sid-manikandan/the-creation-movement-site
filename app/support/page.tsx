@@ -4,7 +4,7 @@ const supportOptions = [
   {
     title: "Volunteer Opportunities",
     description:
-      "Placeholder for Pratham volunteer opportunities for kids and other future service options.",
+      "Help with workshops, outreach, event setup, student support, and future service opportunities.",
   },
   {
     title: "Donate",
@@ -27,8 +27,9 @@ export default function SupportPage() {
           There is more than one way to help.
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          This page gathers ways people can volunteer, donate, spread the word,
-          and eventually contribute ideas or blog posts.
+          You can support The Creation Movement by volunteering, donating,
+          sharing the mission, or connecting us with families, schools,
+          libraries, and organizations that care about youth creativity.
         </p>
       </section>
 
@@ -52,13 +53,14 @@ export default function SupportPage() {
 
       <section className="section-shell py-16">
         <div className="rounded-[2rem] border-3 border-ink bg-teal p-8 text-white shadow-[10px_10px_0_#f57a20]">
-          <p className="font-accent text-4xl">Blogs and newsletter</p>
+          <p className="font-accent text-4xl">Ideas and updates</p>
           <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-            Future content hub
+            Help shape what we build next
           </h2>
           <p className="mt-5 max-w-3xl font-semibold leading-7 text-white/85">
-            Placeholder for future newsletters, student-written blogs, and a
-            way for people to email ideas or ask to contribute.
+            Have a workshop idea, partner suggestion, volunteer lead, or story
+            worth sharing? Send it to the team so we can keep building programs
+            that are useful and community-centered.
           </p>
           <Link
             href="/contact"

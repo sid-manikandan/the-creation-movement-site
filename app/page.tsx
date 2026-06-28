@@ -11,7 +11,7 @@ const featuredPages = [
     title: "About Us",
     href: "/about",
     description:
-      "Our story, mission, team placeholders, and future plans for The Creation Movement.",
+      "Learn why The Creation Movement began and meet the students building it.",
     color: "bg-[#eadcff]",
   },
   {
@@ -25,7 +25,7 @@ const featuredPages = [
     title: "Events",
     href: "/events",
     description:
-      "Library sessions, private lessons, and a placeholder for the future interest form.",
+      "Explore upcoming library events, private sessions, and hands-on learning opportunities.",
     color: "bg-[#ffe4a9]",
   },
 ];
@@ -96,9 +96,9 @@ export default async function Home() {
       <section className="border-y-3 border-ink bg-white py-16">
         <div className="section-shell">
           <div className="max-w-3xl">
-            <p className="font-accent text-4xl text-purple">Site checklist</p>
+            <p className="font-accent text-4xl text-purple">Start Here</p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-              What you can explore right now
+              How we turn creativity into action
             </h2>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -121,7 +121,7 @@ export default async function Home() {
       <section className="section-shell py-16">
         <div className="grid gap-8 rounded-[2rem] border-3 border-ink bg-ink p-8 text-white shadow-[10px_10px_0_#ffc32d] lg:grid-cols-[1fr_0.8fr] lg:p-10">
           <div>
-            <p className="font-accent text-4xl text-sun">Next up</p>
+            <p className="font-accent text-4xl text-sun">Support the Mission</p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
               {homepage.donateTitle}
             </h2>

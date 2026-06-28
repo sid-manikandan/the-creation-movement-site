@@ -16,9 +16,9 @@ export const fallbackHomepageContent: HomepageContent = {
   missionTitle: "Empowering minds. Fueling creators.",
   missionText:
     "We are building programs and partnerships that help students think, build, share, and make an impact.",
-  donateTitle: "Next up",
+  donateTitle: "Help us create more opportunities.",
   donateText:
-    "The current pages use clean placeholders for bios, partner notes, and forms so the site can grow as you collect final text.",
+    "Your support helps fund STEM materials, library events, workshops, outreach, and donations to education-focused partners.",
   donateButtonText: "Donate on GoFundMe",
   donateUrl:
     "https://www.gofundme.com/f/creation-over-consumption-the-creation-movement",

@@ -26,14 +26,14 @@ export default function ContactPage() {
             </p>
           </a>
           <a
-            href="tel:+17324961622"
+            href="tel:+17324966122"
             className="rounded-2xl border-3 border-ink bg-paper p-7 shadow-[7px_7px_0_#f57a20]"
           >
             <p className="text-sm font-black uppercase tracking-[0.18em] text-purple">
               Phone
             </p>
             <p className="mt-3 break-words text-xl font-black sm:text-2xl">
-              732-496-1622
+              732-496-6122
             </p>
           </a>
         </div>

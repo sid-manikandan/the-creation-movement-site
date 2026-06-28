@@ -88,7 +88,7 @@ export default function RootLayout({
               <a href="mailto:het.gandhi9750@gmail.com">
                 het.gandhi9750@gmail.com
               </a>
-              <a href="tel:+17324961622">732-496-1622</a>
+              <a href="tel:+17324966122">732-496-6122</a>
             </div>
           </div>
         </footer>

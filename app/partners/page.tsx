@@ -5,17 +5,17 @@ const partners = [
     name: "Pratham",
     status: "Donation partner",
     description:
-      "Bio goes here. Add Pratham’s preferred description, mission alignment, and how donations through The Creation Movement support their work.",
+      "Pratham works toward a world where every child is in school and learning well. Their programs support millions of children and youth across India, especially underprivileged students, through innovative learning and training programs.",
     link: "https://give.prathamusa.org/thecreationmovement",
     linkLabel: "Pratham donation link",
   },
   {
     name: "Brain Bunch",
-    status: "Partner placeholder",
+    status: "Future collaboration",
     description:
-      "Bio goes here. Add Brain Bunch’s preferred description after you contact the organization and confirm what they want listed.",
+      "Brain Bunch is a developing relationship for future learning and outreach opportunities. As our programs grow, we hope to collaborate with organizations that share our focus on student curiosity and community impact.",
     link: "",
-    linkLabel: "Donation link coming soon",
+    linkLabel: "Collaboration in progress",
   },
 ];
 
@@ -28,8 +28,8 @@ export default function PartnersPage() {
           Working with organizations that expand access.
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          This page is ready for partner bios, donation links, and short notes
-          from organizations as they share what they would like included.
+          We partner with organizations that help expand access to education,
+          service, and creative learning.
         </p>
       </section>
 
