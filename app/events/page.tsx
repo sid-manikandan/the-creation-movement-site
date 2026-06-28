@@ -1,4 +1,12 @@
-const eventTracks = [
+type EventTrack = {
+  title: string;
+  description: string;
+  details?: string[];
+  actionHref?: string;
+  actionLabel?: string;
+};
+
+const eventTracks: EventTrack[] = [
   {
     title: "EBPL Library Workshops",
     description:
@@ -50,7 +58,7 @@ export default function EventsPage() {
               <p className="mt-4 font-semibold leading-7 text-ink/70">
                 {track.description}
               </p>
-              {"details" in track ? (
+              {track.details ? (
                 <ul className="mt-5 grid gap-3">
                   {track.details.map((detail) => (
                     <li
@@ -62,7 +70,7 @@ export default function EventsPage() {
                   ))}
                 </ul>
               ) : null}
-              {"actionHref" in track ? (
+              {track.actionHref && track.actionLabel ? (
                 <a
                   href={track.actionHref}
                   className="mt-6 inline-flex rounded-full border-3 border-ink bg-orange px-6 py-3 text-sm font-black uppercase tracking-[0.12em] shadow-[5px_5px_0_#001a46]"
