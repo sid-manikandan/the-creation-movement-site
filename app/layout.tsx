@@ -40,12 +40,9 @@ export default function RootLayout({
                 height={72}
                 className="h-12 w-auto shrink-0 object-contain transition-transform group-hover:-rotate-3"
               />
-              <span className="min-w-0 leading-none">
-                <span className="block text-[0.65rem] font-black uppercase tracking-[0.24em] text-purple">
-                  The
-                </span>
-                <span className="block truncate text-base font-black uppercase tracking-tight sm:text-lg">
-                  Creation Movement
+              <span className="min-w-0">
+                <span className="block truncate text-base font-black uppercase tracking-tight text-ink sm:text-lg">
+                  The Creation Movement
                 </span>
               </span>
             </Link>

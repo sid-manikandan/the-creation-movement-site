@@ -7,8 +7,9 @@ export default function ContactPage() {
           Reach out to the team.
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          Use this page for general questions, event interest, partnership
-          ideas, volunteer opportunities, and future blog/newsletter ideas.
+          Use this page for general questions, event interest, and partnership
+          ideas. For future blog/newsletter ideas or suggestions, use our
+          suggestion box.
         </p>
       </section>
 

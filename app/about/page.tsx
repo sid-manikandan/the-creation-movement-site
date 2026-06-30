@@ -8,18 +8,23 @@ const team = [
   },
   {
     name: "Siddharth Manikandan",
-    role: "Co-Founder - Marketing Director",
+    role: "President / Marketing Director",
     bio: "Bio coming soon.",
   },
   {
     name: "Pranay Burla",
-    role: "Co-Founder - Lead Contributor",
+    role: "Vice President / Lead Contributor",
     bio: "Pranay is a student at East Brunswick High School who is passionate about science, sports, and community service. He enjoys playing baseball and basketball, exploring new scientific ideas, and trying different foods. He joined the nonprofit to combine his love for chemistry and science with his goal of helping kids develop creativity and curiosity in an age increasingly shaped by technology and phones.",
   },
   {
     name: "Vedh Gajawada",
-    role: "Co-Founder - Outreach Coordinator",
+    role: "Vice President / Outreach Coordinator",
     bio: "Vedh is currently a student at East Brunswick High School. His interest in STEM helps him develop problem-solving skills and explore the world of engineering. He participates in his school’s robotics club, demonstrating valuable teamwork and gaining constant hands-on experience. Outside of academics, Vedh loves to play volleyball on his school team, read in his free time, and travel around the world with his family. His main goal in joining the nonprofit was to apply his interests in a meaningful way while giving back to his community, allowing him to help students build their confidence in STEM-related fields.",
+  },
+  {
+    name: "Nishita Chavan",
+    role: "Blog Writer",
+    bio: "Nishita Chavan is a rising junior at East Brunswick High School whose interests lie in various school subjects such as Biology and English. Outside of school, Nishita likes reading, going on hikes and walks, along with playing badminton. Her motive to be a part of The Creation Movement stems from her passion in writing and advocating for various topics that are prevalent in today’s discussions. She believes The Creation Movement is an innovative and educational way to spark the desire to learn and explore in young minds. As TCM’s blog writer, she hopes to utilize her passion to educate others on topics in the areas such as social sciences and modern debates, fueling an environment of awareness and intrigue.",
   },
 ];
 

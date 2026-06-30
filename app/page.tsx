@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ActionCarousel from "@/app/components/ActionCarousel";
 import {
   fallbackHomepageContent,
   type HomepageContent,
@@ -6,29 +7,8 @@ import {
 import { sanityFetch } from "@/sanity/lib/live";
 import { HOMEPAGE_QUERY } from "@/sanity/lib/queries";
 
-const featuredPages = [
-  {
-    title: "About Us",
-    href: "/about",
-    description:
-      "Learn why The Creation Movement began and meet the students building it.",
-    color: "bg-[#eadcff]",
-  },
-  {
-    title: "Partners",
-    href: "/partners",
-    description:
-      "Pratham, Brain Bunch, and future nonprofit partners we hope to support.",
-    color: "bg-[#d9f0e7]",
-  },
-  {
-    title: "Events",
-    href: "/events",
-    description:
-      "Explore upcoming library events, private sessions, and hands-on learning opportunities.",
-    color: "bg-[#ffe4a9]",
-  },
-];
+const suggestionBoxUrl =
+  "https://docs.google.com/forms/d/1o2RYwHPuUqO-crPP_IIXH3mVPXR8J-b8isG8biEEihI/edit?ts=6a442733";
 
 function withFallback(content: Partial<HomepageContent> | null): HomepageContent {
   return {
@@ -95,24 +75,86 @@ export default async function Home() {
 
       <section className="border-y-3 border-ink bg-white py-16">
         <div className="section-shell">
-          <div className="max-w-3xl">
-            <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-              How we turn creativity into action
-            </h2>
+          <div className="grid gap-6 lg:grid-cols-[0.8fr_1fr] lg:items-end">
+            <div>
+              <p className="font-accent text-4xl text-purple">
+                Explore the Movement
+              </p>
+              <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
+                How we turn creativity into action
+              </h2>
+            </div>
+            <p className="border-l-[6px] border-teal pl-5 text-lg font-semibold leading-8 text-ink/75">
+              Every part of The Creation Movement gives students a next step:
+              learn our story, join an event, read our updates, support the
+              mission, or reach out to build something with us.
+            </p>
           </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {featuredPages.map((page) => (
-              <Link
-                key={page.href}
-                href={page.href}
-                className={`${page.color} rounded-2xl border-3 border-ink p-7 shadow-[7px_7px_0_#001a46] transition-transform hover:-translate-y-1`}
-              >
-                <h3 className="text-2xl font-black uppercase">{page.title}</h3>
-                <p className="mt-4 font-semibold leading-7 text-ink/70">
-                  {page.description}
-                </p>
-              </Link>
-            ))}
+          <ActionCarousel />
+        </div>
+      </section>
+
+      <section className="border-b-3 border-ink bg-paper py-16">
+        <div className="section-shell">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <p className="font-accent text-4xl text-orange">
+                Join Our Movement!
+              </p>
+              <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
+                Creativity grows when people build with us.
+              </h2>
+              <p className="mt-5 text-lg font-semibold leading-8 text-ink/75">
+                The Creation Movement is not just a set of classes. It is a
+                path for students to discover what excites them, turn curiosity
+                into real projects, and grow alongside mentors who help them
+                keep creating.
+              </p>
+              <p className="mt-6 border-l-[6px] border-orange pl-5 text-2xl font-black leading-snug tracking-tight text-ink">
+                We need students to create with us, grow with us, and help
+                shape what this movement becomes.
+              </p>
+            </div>
+
+            <div className="grid gap-5">
+              {[
+                {
+                  step: "01",
+                  title: "Discover the movement",
+                  description:
+                    "Students are introduced to hands-on creativity through our library sessions, where they try ideas, ask questions, and see learning as something active.",
+                },
+                {
+                  step: "02",
+                  title: "Find their creative direction",
+                  description:
+                    "Through a creativity assessment, students reflect on their interests, strengths, and the kinds of projects they are excited to explore next.",
+                },
+                {
+                  step: "03",
+                  title: "Build in a 1-on-1 space",
+                  description:
+                    "In private sessions, students develop creative projects of their choice with focused guidance, turning personal interests into something they can build and share.",
+                },
+              ].map((item) => (
+                <article
+                  key={item.step}
+                  className="grid gap-4 rounded-2xl border-3 border-ink bg-white p-6 shadow-[7px_7px_0_#001a46] sm:grid-cols-[auto_1fr]"
+                >
+                  <p className="grid size-12 place-items-center rounded-full bg-sun text-lg font-black text-ink">
+                    {item.step}
+                  </p>
+                  <div>
+                    <h3 className="text-xl font-black uppercase tracking-tight">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 font-semibold leading-7 text-ink/70">
+                      {item.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -120,20 +162,22 @@ export default async function Home() {
       <section className="section-shell py-16">
         <div className="grid gap-8 rounded-[2rem] border-3 border-ink bg-ink p-8 text-white shadow-[10px_10px_0_#ffc32d] lg:grid-cols-[1fr_0.8fr] lg:p-10">
           <div>
-            <p className="font-accent text-4xl text-sun">Support the Mission</p>
+            <p className="font-accent text-4xl text-sun">Suggestion Box</p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-              {homepage.donateTitle}
+              Help shape what we build next.
             </h2>
             <p className="mt-5 max-w-2xl font-semibold leading-7 text-white/75">
-              {homepage.donateText}
+              Have a workshop idea, article topic, event suggestion, or project
+              you want to see The Creation Movement explore? Send it our way so
+              we can keep growing with the community.
             </p>
           </div>
           <div className="flex flex-col justify-center gap-3">
             <Link
-              href={homepage.donateUrl}
+              href={suggestionBoxUrl}
               className="rounded-full border-3 border-white bg-white px-7 py-4 text-center font-black uppercase tracking-[0.12em] text-ink"
             >
-              {homepage.donateButtonText}
+              Open suggestion box
             </Link>
             <Link
               href="/contact"

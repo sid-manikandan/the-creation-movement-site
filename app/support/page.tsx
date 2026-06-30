@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+const suggestionBoxUrl =
+  "https://docs.google.com/forms/d/1o2RYwHPuUqO-crPP_IIXH3mVPXR8J-b8isG8biEEihI/edit?ts=6a442733";
+
 const supportOptions = [
   {
     title: "Volunteer Opportunities",
@@ -7,9 +10,9 @@ const supportOptions = [
       "Help with workshops, outreach, event setup, student support, and future service opportunities.",
   },
   {
-    title: "Donate",
+    title: "Suggest an Idea",
     description:
-      "Support The Creation Movement through GoFundMe or donate directly through partner campaigns.",
+      "Share workshop ideas, article topics, project suggestions, community needs, or ways we can keep improving.",
   },
   {
     title: "Spread the Word",
@@ -27,8 +30,8 @@ export default function SupportPage() {
           There is more than one way to help.
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          You can support The Creation Movement by volunteering, donating,
-          sharing the mission, or connecting us with families, schools,
+          You can support The Creation Movement by volunteering, sharing ideas,
+          spreading the mission, or connecting us with families, schools,
           libraries, and organizations that care about youth creativity.
         </p>
       </section>
@@ -63,10 +66,10 @@ export default function SupportPage() {
             that are useful and community-centered.
           </p>
           <Link
-            href="/contact"
+            href={suggestionBoxUrl}
             className="mt-7 inline-flex rounded-full border-3 border-white bg-white px-6 py-3 text-sm font-black uppercase tracking-[0.12em] text-ink"
           >
-            Email an idea
+            Open suggestion box
           </Link>
         </div>
       </section>
