@@ -5,9 +5,9 @@ const suggestionBoxUrl =
 
 const supportOptions = [
   {
-    title: "Volunteer Opportunities",
+    title: "Partner With Us",
     description:
-      "Help with workshops, outreach, event setup, student support, and future service opportunities.",
+      "Nonprofits, libraries, schools, and community organizations can work with us to bring creative learning opportunities to more students.",
   },
   {
     title: "Suggest an Idea",
@@ -30,9 +30,10 @@ export default function SupportPage() {
           There is more than one way to help.
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          You can support The Creation Movement by volunteering, sharing ideas,
-          spreading the mission, or connecting us with families, schools,
-          libraries, and organizations that care about youth creativity.
+          You can support The Creation Movement by partnering with us, sharing
+          ideas, spreading the mission, or connecting us with families, schools,
+          libraries, nonprofits, and organizations that care about youth
+          creativity.
         </p>
       </section>
 
@@ -61,7 +62,7 @@ export default function SupportPage() {
             Help shape what we build next
           </h2>
           <p className="mt-5 max-w-3xl font-semibold leading-7 text-white/85">
-            Have a workshop idea, partner suggestion, volunteer lead, or story
+            Have a workshop idea, partner suggestion, article topic, or story
             worth sharing? Send it to the team so we can keep building programs
             that are useful and community-centered.
           </p>
