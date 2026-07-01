@@ -9,7 +9,7 @@ const team = [
   {
     name: "Siddharth Manikandan",
     role: "Co-founder / Marketing Director",
-    bio: "Bio coming soon.",
+    bio: "Siddharth Manikandan is a sophomore at East Brunswick High School and the Co-Founder and Marketing Director of The Creation Movement. Siddharth brings a wide range of skills and perspectives to TCM, and his interests include competing in chess tournaments, robotics, coding, reading, quiz bowl, volleyball, and playing piano, guitar, and saxophone. Across everything he does, Siddharth is drawn to the same idea: creativity is not limited to artists, inventors, or a select few. He believes every child has a creative spark within them; they simply need the right guidance, encouragement, and opportunity to bring it forward. Through his role in marketing, Siddharth hopes to help share TCM’s mission with as many students as possible to inspire young people to create and think critically beyond just a screen.",
   },
   {
     name: "Nishita Chavan",
