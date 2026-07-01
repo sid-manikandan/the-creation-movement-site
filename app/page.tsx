@@ -47,7 +47,7 @@ export default async function Home() {
         <div className="section-shell">
           <div className="max-w-4xl py-10">
             <p className="marker-swipe mb-6 w-max bg-sun px-5 py-2 text-sm font-black uppercase tracking-[0.18em] text-ink">
-              Create more. Consume less.
+              Create more. Consume less
             </p>
             <h1 className="max-w-4xl text-6xl font-black uppercase leading-[0.9] tracking-tight text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.28)] sm:text-7xl lg:text-8xl">
               {homepage.heroTitle}
@@ -102,7 +102,7 @@ export default async function Home() {
                 Join Our Movement!
               </p>
               <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-                Creativity grows when people build with us.
+                Creativity grows when people build with us
               </h2>
               <p className="mt-5 text-lg font-semibold leading-8 text-ink/75">
                 The Creation Movement is not just a set of classes. It is a
@@ -164,7 +164,7 @@ export default async function Home() {
           <div>
             <p className="font-accent text-4xl text-sun">Suggestion Box</p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-              Help shape what we build next.
+              Help shape what we build next
             </h2>
             <p className="mt-5 max-w-2xl font-semibold leading-7 text-white/75">
               Have a workshop idea, article topic, event suggestion, or project

@@ -4,7 +4,7 @@ export default function ContactPage() {
       <section className="section-shell py-16">
         <p className="font-accent text-4xl text-purple">Contact Us</p>
         <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
-          Reach out to the team.
+          Reach out to the team
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
           Use this page for general questions, event interest, and partnership

@@ -13,7 +13,7 @@ export default function DonatePage() {
       <section className="section-shell py-16">
         <p className="font-accent text-4xl text-orange">Donate</p>
         <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
-          Help fund creation over consumption.
+          Help fund creation over consumption
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
           Donations to The Creation Movement help us provide learning
@@ -46,7 +46,7 @@ export default function DonatePage() {
           <div>
             <p className="font-accent text-4xl text-teal">Why funding matters</p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-              Every contribution turns into access.
+              Every contribution turns into access
             </h2>
           </div>
           <div className="grid gap-4">

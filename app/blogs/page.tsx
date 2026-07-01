@@ -25,7 +25,7 @@ export default function BlogsPage() {
       <section className="section-shell py-16">
         <p className="font-accent text-4xl text-purple">Content Hub</p>
         <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
-          Newsletters, stories, and ideas from our community.
+          Newsletters, stories, and ideas from our community
         </h1>
         <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
           This will be the home for Creation Movement newsletters, blog posts,
@@ -41,7 +41,7 @@ export default function BlogsPage() {
               What We&apos;ll Share
             </p>
             <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-              A place for updates, reflections, and student voices.
+              A place for updates, reflections, and student voices
             </h2>
           </div>
 

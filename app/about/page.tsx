@@ -3,28 +3,28 @@ import Image from "next/image";
 const team = [
   {
     name: "Het Gandhi",
-    role: "Founder",
+    role: "Founder / Lead Creative Director",
     bio: "Het is a rising junior at East Brunswick High School who believes creativity has the power to shape a better future. He enjoys reading, journaling, exploring new ideas, and making the most of time outdoors with friends. He founded The Creation Movement with the mission of helping young people become creators instead of consumers in a world increasingly dominated by screens. By encouraging curiosity, hands-on learning, and creative expression, he hopes to inspire the next generation to think independently, build boldly, and leave a positive mark on the world.",
   },
   {
     name: "Siddharth Manikandan",
-    role: "President / Marketing Director",
+    role: "Co-founder / Marketing Director",
     bio: "Bio coming soon.",
   },
   {
-    name: "Pranay Burla",
-    role: "Vice President / Lead Contributor",
-    bio: "Pranay is a student at East Brunswick High School who is passionate about science, sports, and community service. He enjoys playing baseball and basketball, exploring new scientific ideas, and trying different foods. He joined the nonprofit to combine his love for chemistry and science with his goal of helping kids develop creativity and curiosity in an age increasingly shaped by technology and phones.",
+    name: "Nishita Chavan",
+    role: "Lead Writing Director",
+    bio: "Nishita Chavan is a rising junior at East Brunswick High School whose interests lie in various school subjects such as Biology and English. Outside of school, Nishita likes reading, going on hikes and walks, along with playing badminton. Her motive to be a part of The Creation Movement stems from her passion in writing and advocating for various topics that are prevalent in today’s discussions. She believes The Creation Movement is an innovative and educational way to spark the desire to learn and explore in young minds. As TCM’s blog writer, she hopes to utilize her passion to educate others on topics in the areas such as social sciences and modern debates, fueling an environment of awareness and intrigue.",
   },
   {
     name: "Vedh Gajawada",
-    role: "Vice President / Outreach Coordinator",
+    role: "Co-founder / Outreach Coordinator",
     bio: "Vedh is currently a student at East Brunswick High School. His interest in STEM helps him develop problem-solving skills and explore the world of engineering. He participates in his school’s robotics club, demonstrating valuable teamwork and gaining constant hands-on experience. Outside of academics, Vedh loves to play volleyball on his school team, read in his free time, and travel around the world with his family. His main goal in joining the nonprofit was to apply his interests in a meaningful way while giving back to his community, allowing him to help students build their confidence in STEM-related fields.",
   },
   {
-    name: "Nishita Chavan",
-    role: "Blog Writer",
-    bio: "Nishita Chavan is a rising junior at East Brunswick High School whose interests lie in various school subjects such as Biology and English. Outside of school, Nishita likes reading, going on hikes and walks, along with playing badminton. Her motive to be a part of The Creation Movement stems from her passion in writing and advocating for various topics that are prevalent in today’s discussions. She believes The Creation Movement is an innovative and educational way to spark the desire to learn and explore in young minds. As TCM’s blog writer, she hopes to utilize her passion to educate others on topics in the areas such as social sciences and modern debates, fueling an environment of awareness and intrigue.",
+    name: "Pranay Burla",
+    role: "Co-founder / Lead Contributor",
+    bio: "Pranay is a student at East Brunswick High School who is passionate about science, sports, and community service. He enjoys playing baseball and basketball, exploring new scientific ideas, and trying different foods. He joined the nonprofit to combine his love for chemistry and science with his goal of helping kids develop creativity and curiosity in an age increasingly shaped by technology and phones.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function AboutPage() {
           <div>
             <p className="font-accent text-4xl text-purple">Our Story</p>
             <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
-              Inspiring the next generation of creators.
+              Inspiring the next generation of creators
             </h1>
             <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
               The Creation Movement is a student-led nonprofit started in East
@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <p className="font-accent text-4xl text-purple">Mission</p>
           <h2 className="mt-2 text-4xl font-black uppercase tracking-tight">
-            Inspire young people to become creators, not just consumers.
+            Inspire young people to become creators, not just consumers
           </h2>
           <p className="mt-5 text-lg font-semibold leading-8 text-ink/75">
             Through STEM education, creativity, mentorship, and service, we

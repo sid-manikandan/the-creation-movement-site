@@ -13,10 +13,10 @@ export const fallbackHomepageContent: HomepageContent = {
   heroTitle: "The Creation Movement",
   heroSubtitle:
     "A student-led nonprofit that empowers young people to become creators through STEM education, creative expression, community support, and real-world service.",
-  missionTitle: "Empowering minds. Fueling creators.",
+  missionTitle: "Empowering minds. Fueling creators",
   missionText:
     "We are building programs and partnerships that help students think, build, share, and make an impact.",
-  donateTitle: "Help us create more opportunities.",
+  donateTitle: "Help us create more opportunities",
   donateText:
     "Your support helps fund STEM materials, library events, workshops, outreach, and donations to education-focused partners.",
   donateButtonText: "Donate on GoFundMe",
