@@ -10,7 +10,6 @@ const navItems = [
   ["Events", "/events"],
   ["Blogs", "/blogs"],
   ["Support", "/support"],
-  ["Contact", "/contact"],
 ] as const;
 
 export const metadata: Metadata = {
@@ -34,10 +33,10 @@ export default function RootLayout({
           >
             <Link href="/" className="group flex min-w-0 items-center gap-3">
               <Image
-                src="/brand/Screenshot_2026-06-20_at_2.13.35_PM-removebg-preview.png"
+                src="/brand/creation-movement-full-logo.png"
                 alt="The Creation Movement logo"
-                width={96}
-                height={72}
+                width={546}
+                height={457}
                 className="h-12 w-auto shrink-0 object-contain transition-transform group-hover:-rotate-3"
               />
               <span className="min-w-0">
@@ -61,7 +60,7 @@ export default function RootLayout({
 
             <Link
               href="https://www.gofundme.com/f/creation-over-consumption-the-creation-movement"
-              className="shrink-0 rounded-full border-3 border-ink bg-orange px-5 py-2.5 text-sm font-black uppercase tracking-[0.12em] text-ink shadow-[4px_4px_0_#001a46] transition-transform hover:-translate-y-0.5"
+              className="shrink-0 rounded-full border-3 border-ink bg-orange px-5 py-2.5 text-sm font-black uppercase tracking-[0.12em] text-ink transition-transform hover:-translate-y-0.5"
             >
               Donate
             </Link>

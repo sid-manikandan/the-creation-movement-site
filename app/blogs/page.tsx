@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const contentTracks = [
   {
     title: "Newsletter",
@@ -22,16 +24,27 @@ const contentTracks = [
 export default function BlogsPage() {
   return (
     <main>
-      <section className="section-shell py-16">
-        <p className="font-accent text-4xl text-purple">Content Hub</p>
-        <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
-          Newsletters, stories, and ideas from our community
-        </h1>
-        <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          This will be the home for Creation Movement newsletters, blog posts,
-          workshop recaps, event updates, and student-written pieces about the
-          ideas we are building together.
-        </p>
+      <section className="section-shell grid gap-8 py-16 lg:grid-cols-[0.95fr_0.9fr] lg:items-center">
+        <div>
+          <p className="font-accent text-4xl text-purple">Content Hub</p>
+          <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
+            Newsletters, stories, and ideas from our community
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
+            This will be the home for Creation Movement newsletters, blog posts,
+            workshop recaps, event updates, and student-written pieces about the
+            ideas we are building together.
+          </p>
+        </div>
+        <div className="flex min-h-[28rem] items-center justify-center overflow-hidden lg:justify-end">
+          <Image
+            src="/brand/Blogs.png"
+            width={499}
+            height={500}
+            alt="Blog illustration"
+            className="h-[34rem] w-auto scale-150 object-contain"
+          />
+        </div>
       </section>
 
       <section className="border-y-3 border-ink bg-white py-16">
@@ -83,6 +96,15 @@ export default function BlogsPage() {
           </div>
 
           <div className="rounded-2xl border-3 border-ink bg-white p-7 shadow-[8px_8px_0_#f57a20]">
+            <div className="mb-5 flex h-56 items-center justify-center overflow-hidden">
+              <Image
+                src="/brand/Blogs.png"
+                width={499}
+                height={500}
+                alt="Blog illustration"
+                className="h-72 w-auto scale-150 object-contain"
+              />
+            </div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-orange">
               Coming Soon
             </p>

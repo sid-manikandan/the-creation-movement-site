@@ -62,10 +62,10 @@ export default function AboutPage() {
           </div>
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/brand/Screenshot_2026-06-28_at_3.57.44_PM-removebg-preview.png"
-              width={542}
-              height={461}
-              alt="Colorful chemistry beakers and flasks"
+              src="/brand/Replace_Chem_Beakers_On_About.png"
+              width={495}
+              height={504}
+              alt="Create more, consume less illustration"
               className="h-auto w-full max-w-[23rem] object-contain sm:max-w-[27rem] lg:max-w-[24rem]"
               priority
             />

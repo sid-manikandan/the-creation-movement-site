@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type EventTrack = {
   title: string;
   description: string;
@@ -30,16 +32,27 @@ const eventTracks: EventTrack[] = [
 export default function EventsPage() {
   return (
     <main>
-      <section className="section-shell py-16">
-        <p className="font-accent text-4xl text-purple">Events</p>
-        <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
-          Learn, build, and connect in person
-        </h1>
-        <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
-          Our events are built around active learning: students ask questions,
-          try ideas, make projects, and connect what they learn to the world
-          around them.
-        </p>
+      <section className="section-shell grid gap-8 py-16 lg:grid-cols-[0.95fr_0.9fr] lg:items-center">
+        <div>
+          <p className="font-accent text-4xl text-purple">Events</p>
+          <h1 className="mt-3 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
+            Learn, build, and connect in person
+          </h1>
+          <p className="mt-7 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
+            Our events are built around active learning: students ask questions,
+            try ideas, make projects, and connect what they learn to the world
+            around them.
+          </p>
+        </div>
+        <div className="flex min-h-[28rem] items-center justify-center overflow-hidden lg:justify-end">
+          <Image
+            src="/brand/Events.png"
+            width={499}
+            height={500}
+            alt="Events calendar illustration"
+            className="h-[34rem] w-auto scale-150 object-contain"
+          />
+        </div>
       </section>
 
       <section className="border-y-3 border-ink bg-white py-16">
