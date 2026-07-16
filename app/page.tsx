@@ -10,6 +10,8 @@ import { HOMEPAGE_QUERY } from "@/sanity/lib/queries";
 const suggestionBoxUrl =
   "https://docs.google.com/forms/d/1o2RYwHPuUqO-crPP_IIXH3mVPXR8J-b8isG8biEEihI/edit?ts=6a442733";
 
+const heroImage = "/brand/workshops/IMG_7424.jpeg";
+
 function withFallback(content: Partial<HomepageContent> | null): HomepageContent {
   return {
     heroTitle: content?.heroTitle || fallbackHomepageContent.heroTitle,
@@ -37,7 +39,7 @@ export default async function Home() {
           aria-hidden="true"
           className="absolute inset-0 -z-20 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/brand/132_jguqb8-1024x683.jpg')",
+            backgroundImage: `url('${heroImage}')`,
           }}
         />
         <div
@@ -56,6 +58,25 @@ export default async function Home() {
               {homepage.heroSubtitle}
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b-3 border-ink bg-sun py-8">
+        <div className="section-shell flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-ink/65">
+              New workshop photos
+            </p>
+            <h2 className="mt-1 text-3xl font-black uppercase tracking-tight">
+              See the movement in action
+            </h2>
+          </div>
+          <Link
+            href="/spotlight"
+            className="w-full rounded-full border-3 border-ink bg-white px-7 py-4 text-center font-black uppercase tracking-[0.12em] shadow-[6px_6px_0_#001a46] transition-transform hover:-translate-y-0.5 sm:w-auto"
+          >
+            Visit spotlight
+          </Link>
         </div>
       </section>
 

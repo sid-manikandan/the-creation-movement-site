@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type EventTrack = {
   title: string;
@@ -10,14 +11,11 @@ type EventTrack = {
 
 const eventTracks: EventTrack[] = [
   {
-    title: "EBPL Library Workshops",
+    title: "EBPL Library Workshops Completed",
     description:
-      "Join The Creation Movement at the East Brunswick Public Library for free hands-on STEM and creativity workshops.",
-    details: [
-      "Tuesday, July 8, 3:00-4:30 PM",
-      "Tuesday, July 15, 3:00-4:30 PM",
-      "To attend, arrive at the library 30 minutes before the session to pick up a free entry ticket.",
-    ],
+      "Our July workshops at the East Brunswick Public Library have wrapped. Thank you to everyone who joined us, built with us, and helped make the sessions such a strong start.",
+    actionHref: "/spotlight",
+    actionLabel: "View workshop spotlight",
   },
   {
     title: "Private Sessions",
@@ -56,7 +54,7 @@ export default function EventsPage() {
       </section>
 
       <section className="border-y-3 border-ink bg-white py-16">
-        <div className="section-shell grid gap-6 md:grid-cols-2">
+        <div className="section-shell grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {eventTracks.map((track, index) => (
             <article
               key={track.title}
@@ -84,12 +82,12 @@ export default function EventsPage() {
                 </ul>
               ) : null}
               {track.actionHref && track.actionLabel ? (
-                <a
+                <Link
                   href={track.actionHref}
                   className="mt-6 inline-flex rounded-full border-3 border-ink bg-orange px-6 py-3 text-sm font-black uppercase tracking-[0.12em] shadow-[5px_5px_0_#001a46]"
                 >
                   {track.actionLabel}
-                </a>
+                </Link>
               ) : null}
             </article>
           ))}

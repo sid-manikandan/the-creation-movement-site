@@ -26,6 +26,18 @@ const partners = [
     link: "https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=UG3U8WST3ULN6&source=url&ssrt=1780788747447",
     linkLabel: "Brain Bunch donation link",
   },
+  {
+    name: "Courage in Calm",
+    status: "Community partner",
+    logoFile: "/brand/Courage_In_Calm_Transparent.png",
+    logoWidth: 548,
+    logoHeight: 414,
+    logoClassName: "max-h-28",
+    description:
+      "Courage in Calm aims to educate youth on the foundations of physical and mental wellness, providing them with practical tools to confidently navigate and protect themselves in challenging situations.",
+    link: "",
+    linkLabel: "Partner profile coming soon",
+  },
 ];
 
 export default function PartnersPage() {
