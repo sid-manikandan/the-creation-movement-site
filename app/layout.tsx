@@ -25,7 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full scroll-smooth antialiased">
+    <html
+      lang="en"
+      className="h-full scroll-smooth antialiased"
+      data-scroll-behavior="smooth"
+    >
       <body className="min-h-full bg-paper text-ink">
         <header className="sticky top-0 z-40 border-b-3 border-ink bg-paper/95 backdrop-blur">
           <nav

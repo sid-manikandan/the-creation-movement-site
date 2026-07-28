@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const contentTracks = [
   {
@@ -11,7 +12,9 @@ const contentTracks = [
     title: "Workshop Recaps",
     label: "Events",
     description:
-      "Stories from our sessions, including what students built, what we learned, and how each event helped bring creativity into action.",
+      "Get a closer look at our July 8th and 15th workshops, from the hands-on stations to the students and mentors who helped bring them to life.",
+    href: "/blogs/july-8-15-workshop-recap",
+    actionLabel: "Read the workshop recap",
   },
   {
     title: "Student Articles",
@@ -58,23 +61,50 @@ export default function BlogsPage() {
             </h2>
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {contentTracks.map((track) => (
-              <article
-                key={track.title}
-                className="rounded-2xl border-3 border-ink bg-paper p-7 shadow-[7px_7px_0_#001a46]"
-              >
-                <p className="inline-flex rounded-full bg-sun px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-ink">
-                  {track.label}
-                </p>
-                <h2 className="mt-6 text-2xl font-black uppercase">
-                  {track.title}
-                </h2>
-                <p className="mt-4 font-semibold leading-7 text-ink/70">
-                  {track.description}
-                </p>
-              </article>
-            ))}
+          <div
+            id="workshop-recaps"
+            className="mt-10 grid scroll-mt-24 gap-6 md:grid-cols-3"
+          >
+            {contentTracks.map((track) => {
+              const cardClass =
+                "rounded-2xl border-3 border-ink bg-paper p-7 shadow-[7px_7px_0_#001a46]";
+              const cardContent = (
+                <>
+                  <p className="inline-flex rounded-full bg-sun px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-ink">
+                    {track.label}
+                  </p>
+                  <h2 className="mt-6 text-2xl font-black uppercase">
+                    {track.title}
+                  </h2>
+                  <p className="mt-4 font-semibold leading-7 text-ink/70">
+                    {track.description}
+                  </p>
+                  {track.href && (
+                    <span className="mt-6 inline-flex rounded-full border-3 border-ink bg-orange px-5 py-3 text-xs font-black uppercase tracking-[0.12em] shadow-[4px_4px_0_#001a46]">
+                      {track.actionLabel}
+                    </span>
+                  )}
+                </>
+              );
+
+              if (track.href) {
+                return (
+                  <Link
+                    key={track.title}
+                    href={track.href}
+                    className={`${cardClass} block transition-transform hover:-translate-y-0.5`}
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <article key={track.title} className={cardClass}>
+                  {cardContent}
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>

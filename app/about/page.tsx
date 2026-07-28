@@ -35,6 +35,29 @@ const futurePlans = [
   "Create original lessons and resources after the first events launch.",
 ];
 
+const faqs = [
+  {
+    question: "Why the chameleon?",
+    answer:
+      "The chameleon is very often linked with traits related to adaptibility, transformation, and perception; qualities that children themselves are just beginning to discover. Similar to a chameleon, carefully navigating its surroundings, kids at the edge of adolescence are learning to grow into who they really are; not to blend in or disappear, but to meet the world around them with a sense of purpose. In a society that has normalized constant scrolling and consumption, we encourage them to pause; to notice, to think, and to create. This is truly the heart of what our chameleon represents: more than a mascot, it’s a reminder that we strive to inspire true creators that observe intently, think independently, and adapt intuitively.",
+  },
+  {
+    question: "Who can join TCM programs?",
+    answer:
+      "Our workshops and sessions are built for students who are curious about creating, learning, and trying hands-on projects. Program details may vary by event.",
+  },
+  {
+    question: "Where do workshops happen?",
+    answer:
+      "We host community workshops through local spaces such as libraries, and we are working to expand partnerships with schools, nonprofits, and education-focused groups.",
+  },
+  {
+    question: "How can someone get involved?",
+    answer:
+      "Families, students, and partners can reach out to the team with workshop ideas, project suggestions, partnership opportunities, or questions about future sessions.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <main>
@@ -134,6 +157,32 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
+
+        <div className="mt-12 max-w-4xl">
+          <p className="font-accent text-4xl text-teal">FAQ</p>
+          <h2 className="mt-2 text-3xl font-black uppercase tracking-tight">
+            Quick questions
+          </h2>
+          <div className="mt-6 divide-y-3 divide-ink rounded-lg border-3 border-ink bg-white shadow-[6px_6px_0_#ffc32d]">
+            {faqs.map((faq) => (
+              <details key={faq.question} className="group">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-5 text-left text-lg font-black uppercase tracking-tight [&::-webkit-details-marker]:hidden">
+                  <span>{faq.question}</span>
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-sun text-xl leading-none text-ink group-open:hidden">
+                    +
+                  </span>
+                  <span className="hidden h-8 w-8 shrink-0 place-items-center rounded-full bg-ink text-xl leading-none text-white group-open:grid">
+                    -
+                  </span>
+                </summary>
+                <p className="px-5 pb-6 text-base font-semibold leading-7 text-ink/70">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-10 rounded-2xl border-3 border-ink bg-teal p-7 text-white">
           <p className="text-sm font-black uppercase tracking-[0.18em]">
             Emails

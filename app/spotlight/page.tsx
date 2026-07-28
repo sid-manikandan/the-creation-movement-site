@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const workshopArticleUrl =
   "https://www.tapinto.net/towns/east-brunswick/sections/education/articles/the-creation-movement-s-first-workshop-at-the-east-brunswick-public-library-a-big-hit-with-kids";
+const workshopRecapUrl = "/blogs/july-8-15-workshop-recap";
 
 const workshopPhotos = [
   {
@@ -100,11 +101,33 @@ export default function SpotlightPage() {
               Movement: students experimenting, mentors guiding, and ideas
               taking shape.
             </p>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <Link
+                href={workshopArticleUrl}
+                className="inline-flex rounded-full border-3 border-ink bg-orange px-6 py-3 text-sm font-black uppercase tracking-[0.12em] shadow-[5px_5px_0_#001a46] transition-transform hover:-translate-y-0.5"
+              >
+                Read our workshop story on TAPinto
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-10 rounded-lg border-3 border-ink bg-white p-7 shadow-[7px_7px_0_#009f86]">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-purple">
+              Workshop recap
+            </p>
+            <h3 className="mt-3 text-3xl font-black uppercase tracking-tight text-ink">
+              Get a closer look at our July 8th and 15th workshops
+            </h3>
+            <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-ink/75">
+              Read the full recap from our first two East Brunswick Public
+              Library sessions, including each station, student turnout, and
+              what TCM is building next.
+            </p>
             <Link
-              href={workshopArticleUrl}
-              className="mt-6 inline-flex rounded-full border-3 border-ink bg-orange px-6 py-3 text-sm font-black uppercase tracking-[0.12em] shadow-[5px_5px_0_#001a46] transition-transform hover:-translate-y-0.5"
+              href={workshopRecapUrl}
+              className="mt-6 inline-flex rounded-full border-3 border-ink bg-sun px-6 py-3 text-sm font-black uppercase tracking-[0.12em] shadow-[5px_5px_0_#001a46] transition-transform hover:-translate-y-0.5"
             >
-              Read the workshop story
+              Read the workshop recap
             </Link>
           </div>
 
